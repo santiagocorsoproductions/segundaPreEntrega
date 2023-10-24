@@ -1,0 +1,313 @@
+/* Llamo a la pseudo clase root para poner variables */
+:root{
+    /* Var imagen principal */
+    --imagen-principal-pagina: url("../img/fondo.jpg");
+    /* Var display general (body o main de ultima) */
+    --display-general-pagina: grid;
+    /* Display secundario de contenedores secundarios a body o main */
+    --display-contenedores-secundarios: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* Aplico la variable de imagen principal con background imagen */
+    background-image: var(--imagen-principal-pagina);
+    /* aplico el resto de propiedades de forma normal */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    
+} TENGO QUE VER SI HACE FALTA O NO PERO POR AHORA CON EL FIXED TOP DE BOOTSTRAP ESTA OK*/
+
+.menuNav{
+    background-color: #051955 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagenLogo{
+    width: 80px;
+    height: 80px;
+}
+
+ul{
+    cursor: pointer;
+    list-style-type: none;
+    padding: 10px 10px;
+    /* margin: auto; */
+}
+
+li,a {
+    text-decoration: none;
+    color: #FC8D00 ;
+    padding: 10px 10px 10px;
+    text-transform: uppercase;
+}
+
+.menuNav li{
+    display: inline-block;
+    font-weight: 50px;
+}
+
+/* ACTIVANDO EL GRID AL CONTENEDOR DE MAIN */
+
+
+
+.presentacionPagina{
+   background-image: url(../img/-12.jpg);
+   background-size: cover;
+    background-color: #020c28; 
+   height: 90vh;
+   width: 100vw;
+   /* background-position: center;
+   position: relative;
+   z-index: 1;
+   border: none; */
+} 
+
+.primerArticulo{
+    /* background-color: #FC8D00; */
+    grid-area: "articuloa";
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.segundoArticulo{
+    grid-area: "arituclob";
+    display: flex;
+    flex-wrap: wrap;
+}
+/* /* .tercerArticulo{
+    grid-area: "articuloc";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.cuartoArticulo{
+    grid-area:"articulod";
+    display: flex;
+    /* position: relative; queria tratar de poner el donde estamos por encima del mapa pero no lo pude seguir ubicando*/
+    margin: auto;
+    
+}
+.formularioIndex{
+    border: 1px #FC8D00 outset;
+    background-color: #5f3702;
+    margin-left: 20px;
+    border-radius: 10px;
+    /* height:fit-content;  no hace falta la maoyria del tiempo poner height y dejar que se autoajuste*/
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    grid-area: "pie";
+    display: flex;
+    background-color: #051955;
+    border: #020c28 4px double;
+    max-width: 100%;
+
+}
+/* Hasta acá estilicé contenedores semanticos */
+/* Ahora empiezan los elementos hijos con box modeling o positions */
+.imagenIndex1{
+object-fit: contain;
+width: 720px;
+/* height: 480px; */
+}
+
+
+/* .textoCentral{
+background-color: rgba(0, 66, 247, 0.7);
+padding: 20px;
+border-radius: 2px;
+max-width: 80%;
+z-index: 2;
+
+} */
+.textoPresentacion{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #FC8D00;
+    letter-spacing: 2px;
+}
+.botonHagamosTuIdeaRealidad{
+    background-color: #FC8D00;
+  box-shadow: 6px 5px 24px #666666;
+font-family: Arial;
+  color: orangered;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.primerArticuloh2{
+    color: #FC8D00;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.primerArticulop{
+    color: #FC8D00;
+}
+
+.tituloConocenos{
+    /* No sirve poenr porcentaje porque se me corre mucho de contenedor */
+  font-size: 4rem;
+  text-align: center;
+  margin: auto;
+  color: #FC8D00;
+}
+
+.parrafoConocenos{
+    font-size: 1.5rem;
+    padding: 50px;
+}
+
+.botonesConocenos{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.segundoArticulo input{
+    height: 10vh;
+    width: 10vw;
+    color: #FC8D00;
+    background-color: #5f3702;
+    box-shadow: 6px 5px 24px #2b1801;
+    border-radius: 5px;
+    border-style: groove;
+    font-size: 1rem;
+}
+
+.tituloDondeEstamos{
+    color: red;
+    text-transform: uppercase;
+    /* position: absolute; */
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+
+.formularioIndex h2{
+    font-size: 4rem;
+    color: #FC8D00;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    content: 10px;
+}
+
+.formularioIndex input,select,h3,p{
+    margin: 5px;
+}
+
+.botonEnviar{
+    width: 120px;
+    height: 50px;
+}
+
+.botonResetear{
+   float: right;
+}
+.footerIndex img{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.derechosfooter{
+    display: inline-block;
+    /* margin: 0px; */
+    text-align: end;
+    width: 5000px;
+    margin-top: 150px;
+}
+
+/* Aplicando pseudoclases y pseudoelementos a mi index */
+/* Para el boton de hagamos realidad tu sueño */
+.botonHagamosTuIdeaRealidad:hover{
+    background-color: #c89859;
+    cursor: pointer;
+}
+.botonHagamosTuIdeaRealidad:active{
+    background-color: #fc5800;
+    color: #5e3500;
+}
+/* Aplico mismos estilos a botones conocenos */
+.segundoArticulo input:active{
+    background-color: #fc5800;
+    color: #5e3500;
+}
+.segundoArticulo input:hover{
+    background-color: #c89859;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        background-color: beige;
+    } */
+   
+    /* .menuNav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    } */
+
+    li ul{
+        display: block;
+    }
+  
+    .botonesConocenos{
+        width: 2px;
+    }
+    .primerArticulo{
+        display: block;
+    }
+    .primerArticulop{
+        text-align: center;
+    }
+   .imagenIndex1{
+    display: block;
+    width: 100%;
+margin: auto;
+
+   }
+   .cuartoArticulo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+   }
+   .formularioIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+   }
+   .cuartoArticulo h2 {
+    font-size: 2rem;
+   }
+}
