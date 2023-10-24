@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ACA VA TODO RECURSOS,CABECERA Y TODO LO IMPORTANTE PARA LA WEB COMO TITLE O FAVICON -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Corso producciones</title>
+    <link rel="shortcut icon" href="img/imagen perfil fadu.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg fixed-top menuNav ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/imagen-logo.jpg" alt="Imagen santiago corso productions"
+                    class="imagenLogo img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" aria-current="page" href="#formulariodeconsulta">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="html/video.html">EXPERIENCIA EN VIDEO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="html/photography.html">EXPEREINCIA EN FOTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="html/opinions.html">OPINIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="html/animation.html">EXPERIENCIA EN ANIMACIÓN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="html/aboutus.html">CONOCENOS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    </header>
+    <main class="container-fluid mainIndex ">
+        <div class="row">
+            <div class="presentacionPagina col-12 d-flex align-items-center justify-content-center">
+                <div class="textoCentral">
+                    <h1 class=" textoPresentacion">Lo audiovisual en todo</h1>
+                    <a href="#formulariodeconsulta"><input type="button" id="botonaformulario"
+                            title="Hagamos tu idea realidad" class=" mx-auto botonHagamosTuIdeaRealidad "
+                            value="Hagamos tu idea realidad"></a>
+                </div>
+            </div>
+            <section class="primerArticulo col-md-6 col-xs-12 d-flex p-2">
+                <div class="imgprimerarticulo">
+                    <img src="img/-33.jpg" alt="imagen portada no te quedes afuera" class="imagenIndex1 d-sm-block">
+                </div>
+                <div class="textoprimerarticulo">
+                    <h2 class="primerArticuloh2">No seas parte del montón</h2>
+                    <p class="primerArticulop">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br><br>Saepe perspiciatis cum libero,
+                        <br><br>optio ut id ipsa voluptatum ducimus rem at, quis cupiditate dicta. Autem dolores quidem,
+                        aspernatur optio sint facere!
+                    </p>
+                </div>
+            </section>
+            <article class="segundoArticulo col-12 d-flex p-2 align-items-center justify-content-center">
+                <div class="textoSegundoArticulo">
+                    <h2 class="tituloConocenos">Conócenos</h2>
+                    <p class="parrafoConocenos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt
+                        amet
+                        corporis rem! Deserunt
+                        recusandae, neque nam nulla nisi, repellendus cumque officia tenetur, molestiae odio totam.
+                        Perferendis sapiente perspiciatis delectus.</p>
+                    <div class="botonesConocenos">
+                        <a href="html/photography.html"><input type="button" name="Foto" value="Foto"
+                                class="botonesConocenos foto"></a>
+                        <a href="html/video.html"><input type="button" name="Video" value="Video"
+                                class="botonesConocenos video"></a>
+                        <a href="html/aboutus.html"><input type="button" name="Mas sobre nosotros"
+                                value="Mas sobre nosotros" class="botonesConocenos nosotros"></a>
+                    </div>
+                </div>
+            </article>
+            <div>
+                <h2 class="tituloDondeEstamos">Donde estamos</h2>
+            </div>
+            <article class="cuartoArticulo col-md-6 col-xs-12 d-flex">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13143.878705730527!2d-58.47441909999999!3d-34.55432315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb426ef8d91f7%3A0x452cc5251d73e3ea!2zQm9kZWfDs24gTsO6w7Fleg!5e0!3m2!1ses-419!2sar!4v1695134176316!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="mapaDondeEstamos ratio ratio-16x9"></iframe>
+                <form id="formulariodeconsulta" class="formularioIndex d-flex flex-column">
+                    <h2>Contactanos!</h2>
+                    <!-- <label for="Nombre">Nombre</label> -->
+                    <input type="text" placeholder="Escriba aqui su nombre" id="Nombre" class="nombreInput">
+                    <!-- <label for="Mail">Mail</label> -->
+                    <input type="email" placeholder="escriba un mail para contactar" id="Mail" class="mailInput"
+                        required>
+                    <!-- <label for="PaisOrigen">País de origen</label> -->
+                    <select name="Pais" id="PaisOrigen" aria-placeholder="Seleccione un país" class="paisInput">
+                        <option value="A">Argentina</option>
+                        <option value="B">Latinoamerica</option>
+                        <option value="C">Resto del mundo</option>
+                    </select>
+                    <label for="Mas info">Desea recibir mas informacion y novedades de este artista</label>
+                    <input type="radio" name="Masinfo"
+                        value="Desea recibir mas informacion y novedades de este artista">
+                    <input type="submit" value="Enivar información" class="botonEnviar">
+                    <input type="reset" value="Borrar todo" class="botonResetear">
+                    <h3>Querés venir a visitarnos y nos tomamos unos mates?</h3>
+                    <p>
+                        Estamos en la misma cuadra del bodegón de Núñez. Tranquilos, no les estamos queriendo hacer
+                        promoción, literal estamos al lado.
+                    </p>
+                </form>
+            </article>
+        </div>
+    </main>
+    <footer class=" container-fluid footerIndex">
+        <a href="https://www.instagram.com/santiagocorsoproductions"><img src="img/iconoIG2.png" alt="InstagramIcon"
+                class="icon Instagram"></a>
+        <a href="https://www.facebook.com/santi.cors" target="_blank"><img src="img/iconoFB.png" alt="FacebookIcon"
+                class="icon Facebook" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/santiago-corso-73a726139/" target="_blank"><img src="img/linkedin.png"
+                alt="LinkedinIcon" class="icon Linkedin"></a>
+        <div class="derechosfooter">
+            <p>Derechos reservados 2023 ©</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
