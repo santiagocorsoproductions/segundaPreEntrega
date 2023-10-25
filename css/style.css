@@ -58,9 +58,6 @@ li,a {
     font-weight: 50px;
 }
 
-/* ACTIVANDO EL GRID AL CONTENEDOR DE MAIN */
-
-
 
 .presentacionPagina{
    background-image: url(../img/-12.jpg);
@@ -76,7 +73,6 @@ li,a {
 
 .primerArticulo{
     /* background-color: #FC8D00; */
-    grid-area: "articuloa";
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -84,19 +80,10 @@ li,a {
 }
 
 .segundoArticulo{
-    grid-area: "arituclob";
     display: flex;
     flex-wrap: wrap;
 }
-/* /* .tercerArticulo{
-    grid-area: "articuloc";
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
 .cuartoArticulo{
-    grid-area:"articulod";
     display: flex;
     /* position: relative; queria tratar de poner el donde estamos por encima del mapa pero no lo pude seguir ubicando*/
     margin: auto;
@@ -114,7 +101,6 @@ li,a {
 }
 
 footer{
-    grid-area: "pie";
     display: flex;
     background-color: #051955;
     border: #020c28 4px double;
@@ -262,26 +248,17 @@ font-family: Arial;
 }
 
 @media (max-width: 768px) {
-    /* header{
+    .botonHagamosTuIdeaRealidad{
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        max-width: 100%;
-        background-color: beige;
-    } */
-   
-    /* .menuNav{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    } */
-
-    li ul{
-        display: block;
+        justify-content:center;
+        align-items: center;
     }
-  
+    .imgprimerarticulo{
+        width: fit-content;
+    }
     .botonesConocenos{
         width: 2px;
+        font-size: inherit;
     }
     .primerArticulo{
         display: block;
