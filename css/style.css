@@ -39,6 +39,7 @@ body {
 .imagenLogo {
     width: 80px;
     height: 80px;
+    border-radius: 2px;
 }
 
 ul {
@@ -129,6 +130,7 @@ footer {
 .imagenIndex1 {
     object-fit: contain;
     width: 720px;
+    border-radius: 7px;
     /* height: 480px; */
 }
 
@@ -376,60 +378,108 @@ width: 85%;
 
   .mainAboutUs{
     display: grid;
-    grid-template-rows: 1FR 1FR;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: green;
+    row-gap: 120px;
   }
-  
-.articulos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: aqua;
-  }  
-    .articuloPrimero{
+
+  .articuloPrimero{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    background-color: antiquewhite;
-  } 
-  .articuloPrimero iframe{
-    margin-right: 30px;
-    margin-top: 0px;
-    background-color: #666666;
+    margin: 10px;
   }
 
+  .articuloPrimero iframe{
+    object-fit: fill;
+    width: 500px;
+    height: 300px;
+    background-color: #fc5800;
+  }
 
-
-.articuloTercero{
-    display: flex;
-    justify-content: space-around;
-background-color: #020c28;
-}
-
-.articuloTercero h2{
-    margin-left: 10px;
-    text-align: center;
-    color: #FC8D00;
+  .articuloSegundo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    
+  }
+  
+  .articuloSegundo h2{
+    color: #fc5800;
     font-size: 3rem;
-    font-weight: 300;
-    background-color: #051955;
-}
-
-.articuloTercero p{
-    margin-left: 10px;
     text-align: center;
-    color: #FC8D00;
-    font-size: 1.5rem;
-}
+    margin-right: 10px;
+  }
 
-.formularioAboutUs{
+  .articuloTercero{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+  }
+  .articuloTercero img{
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 15px;
+  }
+
+  .articuloTercero h2{
+    color: #fc5800;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  p{
+    font-size: 1rem;
+    color: #fc5800;
+  }
+
+  .formularioAboutUs {
     border: 1px #FC8D00 outset;
     background-color: #5f3702;
-    margin-top: 50px;
     margin-left: 20px;
     border-radius: 10px;
     /* height:fit-content;  no hace falta la maoyria del tiempo poner height y dejar que se autoajuste*/
     width: 400px;
     display: flex;
     flex-direction: column;
-    background-color: brown;
+}
+
+  .formularioAboutUs h2 {
+    font-size: 4rem;
+    color: #FC8D00;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    content: 10px;
+}
+
+.formularioAboutUs input,
+select,
+h3,
+p {
+    margin: 5px;
+}
+
+.botonEnviar {
+    width: 120px;
+    height: 50px;
+}
+
+.botonResetear {
+    float: right;
+}
+
+/* Ahora mediaqueries para el aboutus */
+
+@media (max-width:1200px){
+    .mainAboutUs{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .articuloSegundo{
+        display: flex;
+        justify-content: center;
+    }
 }
