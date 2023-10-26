@@ -369,3 +369,17 @@ width: 85%;
     margin-top: 20px;
    }
 }
+
+
+/* ESTILIZANDO EL ABOUTUS CON GRID Y FLEX */
+  /* activo grid en el mainIndex */
+
+  .mainIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .articuloPrimero{
+    display: flex;
+    justify-content: space-between;
+  }
