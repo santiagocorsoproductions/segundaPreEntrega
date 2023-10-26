@@ -374,12 +374,62 @@ width: 85%;
 /* ESTILIZANDO EL ABOUTUS CON GRID Y FLEX */
   /* activo grid en el mainIndex */
 
-  .mainIndex{
+  .mainAboutUs{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1FR 1FR;
   }
   
-  .articuloPrimero{
+.articulos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aqua;
+  }  
+    .articuloPrimero{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: antiquewhite;
+  } 
+  .articuloPrimero iframe{
+    margin-right: 30px;
+    margin-top: 0px;
+    background-color: #666666;
   }
+
+
+
+.articuloTercero{
+    display: flex;
+    justify-content: space-around;
+background-color: #020c28;
+}
+
+.articuloTercero h2{
+    margin-left: 10px;
+    text-align: center;
+    color: #FC8D00;
+    font-size: 3rem;
+    font-weight: 300;
+    background-color: #051955;
+}
+
+.articuloTercero p{
+    margin-left: 10px;
+    text-align: center;
+    color: #FC8D00;
+    font-size: 1.5rem;
+}
+
+.formularioAboutUs{
+    border: 1px #FC8D00 outset;
+    background-color: #5f3702;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
+    /* height:fit-content;  no hace falta la maoyria del tiempo poner height y dejar que se autoajuste*/
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+}
