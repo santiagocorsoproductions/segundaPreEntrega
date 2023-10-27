@@ -7,13 +7,13 @@
     <title>Foto</title>
     <link rel="shortcut icon" href="/img/imagen perfil fadu.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="menuNav">
             <ul>
                 <img src="../img/imagen-logo.jpg" alt="Imagen santiago corso productions" class="imagenLogo">
                 <li><a href="../index.html">HOME</a></li>
@@ -26,68 +26,79 @@
         </nav>
     </header>
     <main class="container-fluid">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../img/-12.jpg" class="d-block w-100" alt="primera imagen">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/-13.jpg" class="d-block w-100" alt="segunda imagen">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/-14.jpg" class="d-block w-100" alt="tercera iamgen">
-              </div>
+        <div class="textoSlides">
+            <p class="d-flex justify-content-center align-items-center">Elegi la imágen a tu gusto para ver más info</p>
+            <div id="carouselExample" class="carousel slide carousel-fade mb-4">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#primerarticulo"><img src="../img/-12.jpg" class="d-block w-100"
+                                alt="primera imagen"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/-13.jpg" class="d-block w-100" alt="segunda imagen">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/-14.jpg" class="d-block w-100" alt="tercera iamgen">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        <div  class="row">
-            <div class="col-12 d-flex justify-content-center w-70 m-4">
-            <h2>Mapa de ubicaciones donde trabajé</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.442891977091!2d-58.479512416461915!3d-34.54234008456435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6bd2c41dee7%3A0x8587ab64fc29380d!2sAv.%20San%20Isidro%20Labrador%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1696296601248!5m2!1ses-419!2sar"
-                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </div>
-        <section class="row">
-            <article class="col-md-6 col-xs-12 articulo primero" id="articuloprimero">
-                <h2>Algunos (cuantos) torneitos de futsal</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sapiente fugit facilis modi obcaecati
-                    dignissimos libero est numquam nisi, assumenda eveniet, adipisci accusamus totam tempora! Numquam
-                    mollitia quam dolorum obcaecati.
-                </p>
-                <a href="https://www.instagram.com/centenera.sports/?img_index=1" target="_blank">Más imágenes</a>
-
-            </article>
-            <article class="col-md-6 col-xs-12 artiuclo segundo" id="articulosegundo">
-                <h2> De torneitos también hay de este tipo</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatem repudiandae corporis sint
-                    maxime? Eum dolorum perferendis perspiciatis ullam tenetur, quas reiciendis error nihil impedit in
-                    rem placeat qui officia.
-                </p>
-                <a href="https://www.instagram.com/mundogoltorneos/" target="_blank">Más imágenes</a>
-            </article>
-            <article class="col-md-6 col-xs-12 articulo tercero" id="articuloTercero">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex voluptate, praesentium
-                    accusantium iste deleniti corrupti soluta porro, molestiae dolorem ducimus cumque quam id esse autem
-                    incidunt pariatur doloremque similique.
-                </p>
-                <a href="https://www.instagram.com/tiba.basquet/">Más imagenes</a>
-            </article>
-        </section>
+        <div class="row mb-4 ubicaciones">
+            <div class="col-12 d-flex justify-content-center mb-4 ubicacionesContenido">
+                <h2 class="textoUbicaciones d-flex align-items-center mr-3">Mapa de ubicaciones donde trabajé</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.442891977091!2d-58.479512416461915!3d-34.54234008456435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6bd2c41dee7%3A0x8587ab64fc29380d!2sAv.%20San%20Isidro%20Labrador%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1696296601248!5m2!1ses-419!2sar"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="mapaUbibacionesTrabajos"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col-xl-4 col-md-6 col-xs-12 articulo primero" id="articuloprimero" >
+                <img src="../img/-12.jpg" class="card-img-top" alt="imagen de bautismo">
+                <div class="card-body">
+                    <h3 class="card-title">Bautismo de Joaquin 25/5</h3>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, aspernatur.
+                        Molestiae, ad aut minus natus earum voluptatibus deleniti saepe aliquid! Maiores sed odit quia
+                        optio, deserunt amet voluptas, corrupti, reiciendis nesciunt veniam atque? Aspernatur vitae
+                        doloremque libero sed unde, esse sapiente quos tempora est, obcaecati amet voluptatibus voluptas
+                        laborum eos.</p>
+                    <a href="https://www.instagram.com/centenera.sports/?img_index=1" target="_blank"
+                        class="btn btn-primary">Más imágenes</a>
+                </div>
+            </div>
+            <div class="card col-xl-4 col-md-6 col-xs-12 articulo segundo" >
+                <img src="../img/-16.jpg" class="card-img-top" alt="otro bautismo">
+                <div class="card-body">
+                    <h3 class="card-title">Algunos bautismos</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.instagram.com/mundogoltorneos/" target="_blank" class="btn btn-primary">Más
+                        imágenes</a>
+                </div>
+            </div>
+            <div class="card col-xl-4 col-md-6 col-xs-12 articulo tercero">
+                <img src="../img/-20.jpg" class="card-img-top d-flex justify-content-center" alt="inmobiliaria">
+                <div class="card-body">
+                    <h3 class="card-title">Ven que te muestro un poco de la casa</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.instagram.com/tiba.basquet/" class="btn btn-primary ">Más imagenes</a>
+                </div>
+            </div>
+        </div>
 
     </main>
-    <footer>
+    <footer class="footerIndex">
         <a href="https://www.instagram.com/santiagocorsoproductions" target="_blank"><img src="../img/iconoIG2.png"
                 alt="InstagramIcon" class="InstagramIcon"></a>
         <a href="https://www.facebook.com/santi.cors" target="_blank"><img src="../img/iconoFB.png" alt="FacebookIcon"
