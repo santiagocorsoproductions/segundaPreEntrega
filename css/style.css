@@ -39,6 +39,7 @@ body {
 .imagenLogo {
     width: 80px;
     height: 80px;
+    border-radius: 2px;
 }
 
 ul {
@@ -129,6 +130,7 @@ footer {
 .imagenIndex1 {
     object-fit: contain;
     width: 720px;
+    border-radius: 7px;
     /* height: 480px; */
 }
 
@@ -371,15 +373,61 @@ width: 85%;
 }
 
 
-/* ESTILIZANDO EL ABOUTUS CON GRID Y FLEX */
-  /* activo grid en el mainIndex */
+/* ESTILIZANDO EL phtoography con bootstrap */
 
-  .mainIndex{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .articuloPrimero{
-    display: flex;
-    justify-content: space-between;
-  }
+.carousel-inner{
+    height: 600px;
+}
+.mapaUbicacionesTrabajos{
+    margin-right: 10px;
+}
+.textoSlides{
+    color: #FC8D00;
+    font-size: 4rem;
+}
+
+.textoUbicaciones{
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #fc5800;
+}
+
+.articulo{
+    background-color: #051955;
+}
+
+.articulo h3{
+    color: #fc5800;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.articulo p{
+    color: #fc5800;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width:768px){
+
+    .articulo h3{
+        color: #fc5800;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .articulo p{
+        color: #fc5800;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .ubicacionesContenido{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .ubicacionesContenido iframe{
+        width: fit-content;
+    }
+}
